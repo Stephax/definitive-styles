@@ -20,5 +20,12 @@
     "bugs": {
         "url": "https://github.com/Stephax/definitive-styles/issues"
     },
-    "homepage": "https://github.com/Stephax/definitive-styles#readme"
+    "homepage": "https://github.com/Stephax/definitive-styles#readme",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-debug": "^4.0.0",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-sass": "^4.1.0",
+        "node-sass": "^4.14.1"
+    }
 }
