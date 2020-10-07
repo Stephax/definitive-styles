@@ -1,24 +1,24 @@
 {
-  "name": "definitive-styles",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Stephax/definitive-styles.git"
-  },
-  "keywords": [
-    "Styled",
-    "HTML",
-    "tags"
-  ],
-  "author": "Michal Bartík",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Stephax/definitive-styles/issues"
-  },
-  "homepage": "https://github.com/Stephax/definitive-styles#readme"
+    "name": "definitive-styles",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"No test specified\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Stephax/definitive-styles.git"
+    },
+    "keywords": [
+        "Styled",
+        "HTML",
+        "tags"
+    ],
+    "author": "Michal Bartík",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Stephax/definitive-styles/issues"
+    },
+    "homepage": "https://github.com/Stephax/definitive-styles#readme"
 }
