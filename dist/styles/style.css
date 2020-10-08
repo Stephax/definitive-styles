@@ -1,3 +1,6 @@
 body {
   background: red;
   font-size: 16px; }
+
+p {
+  color: blue; }
