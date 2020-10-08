@@ -6,7 +6,7 @@
     "scripts": {
         "start": "gulp --gulpfile src/gulp/gulpfile.js watch",
         "build": "gulp --gulpfile src/gulp/gulpfile.js",
-        "publish": "gulp --gulpfile src/gulp/gulpfile.js && np"
+        "release": "gulp --gulpfile src/gulp/gulpfile.js && np"
     },
     "repository": {
         "type": "git",
