@@ -1,8 +1,10 @@
-body {
-    background: red;
-    font-size: 16px;
-}
+@import "_mixins";
+@import "_variables";
 
-p {
-    color: blue;
-}
+@import "_header";
+@import "_blocks";
+@import "_typography";
+
+
+// LOGO FONT
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');

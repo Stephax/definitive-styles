@@ -1,0 +1,39 @@
+
+// HEADINGS
+h1 {
+    font-size: clamp(2.5rem, 6vw, 3rem);
+    font-weight: bold;
+    margin: .5rem 0 .5rem 0;
+}
+h2 {
+    font-size: clamp(2.25rem, 6vw, 2.75rem);
+    font-weight: bold;
+    margin: .5rem 0 .5rem 0;
+    
+}
+h3 {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    font-weight: bold;
+    margin: .5rem 0 .5rem 0;
+}
+h4 {
+    font-size: clamp(1.75rem, 6vw, 2.25rem);
+    font-weight: bold;
+    margin: .5rem 0 .5rem 0;
+}
+h5 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    font-weight: bold;
+    margin: .5rem 0 .5rem 0;
+}
+h6 {
+    font-size: clamp(1.5rem, 6vw, 1.75rem);
+    font-weight: bold;
+    margin: .5rem 0 .5rem 0;
+}
+
+// PARAGRAPH
+p {
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    font-weight: 300;
+}

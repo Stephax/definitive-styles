@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+body {
+  max-width: 800px;
+  background: #e1e1e1;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  margin: 0 10px 0 10px;
+}
+
+section {
+  padding: 15px 0;
+}
+
+table {
+  width: 100%;
+}
+
+table thead {
+  background: #ebebeb;
+}
+
+table td {
+  padding: 3px 5px;
+}
+
+table td:first-child {
+  background: #ebebeb;
+}
+
+table, thead, tbody, td {
+  border-collapse: collapse;
+}
+
+form {
+  width: 100%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+form label input, form label textarea, form label select {
+  display: block;
+  padding: 8px 12px;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  background: #efefef;
+}
+
+form label input:focus, form label textarea:focus, form label select:focus {
+  border: 1px solid #cccccc;
+  outline: none;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 3rem);
+  font-weight: bold;
+  margin: .5rem 0 .5rem 0;
+}
+
+h2 {
+  font-size: clamp(2.25rem, 6vw, 2.75rem);
+  font-weight: bold;
+  margin: .5rem 0 .5rem 0;
+}
+
+h3 {
+  font-size: clamp(2rem, 6vw, 2.5rem);
+  font-weight: bold;
+  margin: .5rem 0 .5rem 0;
+}
+
+h4 {
+  font-size: clamp(1.75rem, 6vw, 2.25rem);
+  font-weight: bold;
+  margin: .5rem 0 .5rem 0;
+}
+
+h5 {
+  font-size: clamp(1.5rem, 6vw, 2rem);
+  font-weight: bold;
+  margin: .5rem 0 .5rem 0;
+}
+
+h6 {
+  font-size: clamp(1.5rem, 6vw, 1.75rem);
+  font-weight: bold;
+  margin: .5rem 0 .5rem 0;
+}
+
+p {
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  font-weight: 300;
+}

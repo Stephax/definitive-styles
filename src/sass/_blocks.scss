@@ -1,0 +1,53 @@
+@import "_mixins";
+
+body {
+    max-width: 800px;
+    background: $primary;
+    margin: auto;
+    @include font-family;
+}
+
+main {
+    margin: 0 10px 0 10px;
+}
+
+section {
+    padding: 15px 0;
+}
+
+table {
+    width: 100%;
+    thead {
+        background: $table-head;
+    }
+    td {
+        padding: 3px 5px;
+        &:first-child {
+            background: $table-head
+        }
+    }
+}
+
+table, thead, tbody, td {
+    border-collapse: collapse;
+}
+
+form {
+    width: 100%;
+    label {
+        display: block;
+        margin-bottom: 20px;
+        input, textarea, select {
+            display: block;
+            padding: 8px 12px;
+            width: 100%;
+            border: 1px solid $form-input-border-color;
+            border-radius: $form-input-border-radius;
+            background: $form-input-background;
+            &:focus {
+                border: 1px solid $form-input-border-color-focus;
+                outline: none;
+            }
+        }
+    }
+}
