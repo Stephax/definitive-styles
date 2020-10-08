@@ -4,7 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"No test specified\""
+        "start": "gulp --gulpfile src/gulp/gulpfile.js watch",
+        "build": "gulp --gulpfile src/gulp/gulpfile.js",
+        "publish": "gulp --gulpfile src/gulp/gulpfile.js && np"
     },
     "repository": {
         "type": "git",
@@ -26,6 +28,7 @@
         "gulp-debug": "^4.0.0",
         "gulp-htmlmin": "^5.0.1",
         "gulp-sass": "^4.1.0",
-        "node-sass": "^4.14.1"
+        "node-sass": "^4.14.1",
+        "np": "^6.5.0"
     }
 }
