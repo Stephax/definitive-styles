@@ -1,5 +1,7 @@
 # Definitive Styles
 
+[![NPM](https://nodei.co/npm/definitive-styles.png)](https://npmjs.org/package/definitive-styles)
+
 ## Development
 
 1. install all dependencies using `npm i`
