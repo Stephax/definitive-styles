@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const htmlmin = require("gulp-htmlmin");
 const sass = require("gulp-sass");
+const rename = require('gulp-rename');
 
 sass.compiler = require("node-sass");
 
@@ -23,11 +24,20 @@ gulp.task("minify-html", () => {
 gulp.task("sass", function() {
     return gulp
         .src("../sass/**/*.scss")
-        .pipe(sass().on("error", sass.logError))
+        .pipe(sass({outputStyle: 'expanded'}).on("error", sass.logError))
+        .pipe(rename('styles.css'))
         .pipe(gulp.dest("../../dist/styles"));
 });
 
-gulp.task("default", gulp.parallel("minify-html", "sass"));
+gulp.task("sass-minify", function() {
+    return gulp
+        .src("../sass/**/*.scss")
+        .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
+        .pipe(rename('styles.min.css'))
+        .pipe(gulp.dest("../../dist/styles"));
+});
+
+gulp.task("default", gulp.parallel("minify-html", "sass", "sass-minify"));
 
 gulp.task("watch", function() {
     gulp.watch("../../src/**/*", gulp.series("default"));
