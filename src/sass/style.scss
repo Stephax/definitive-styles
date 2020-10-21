@@ -1,10 +1,8 @@
-@import "_mixins";
-@import "_variables";
-
+@import "Utils/_mixins";
+@import "Utils/_variables";
+@import "Utils/_media";
 @import "_header";
 @import "_blocks";
 @import "_typography";
-
-
 // LOGO FONT
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");

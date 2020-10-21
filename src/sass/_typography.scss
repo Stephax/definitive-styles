@@ -1,39 +1,102 @@
-
+@import "Utils/_mixins";
 // HEADINGS
 h1 {
-    font-size: clamp(2.5rem, 6vw, 3rem);
     font-weight: bold;
-    margin: .5rem 0 .5rem 0;
-}
-h2 {
-    font-size: clamp(2.25rem, 6vw, 2.75rem);
-    font-weight: bold;
-    margin: .5rem 0 .5rem 0;
-    
-}
-h3 {
-    font-size: clamp(2rem, 6vw, 2.5rem);
-    font-weight: bold;
-    margin: .5rem 0 .5rem 0;
-}
-h4 {
-    font-size: clamp(1.75rem, 6vw, 2.25rem);
-    font-weight: bold;
-    margin: .5rem 0 .5rem 0;
-}
-h5 {
-    font-size: clamp(1.5rem, 6vw, 2rem);
-    font-weight: bold;
-    margin: .5rem 0 .5rem 0;
-}
-h6 {
-    font-size: clamp(1.5rem, 6vw, 1.75rem);
-    font-weight: bold;
-    margin: .5rem 0 .5rem 0;
+    margin: 0.5rem 0 0.5rem 0;
+    @include font-size(2.5rem, 6vw, 3rem);
 }
 
-// PARAGRAPH
+h2 {
+    font-weight: bold;
+    margin: 0.5rem 0 0.5rem 0;
+    @include font-size(2.25rem, 6vw, 2.75rem);
+}
+
+h3 {
+    font-weight: bold;
+    margin: 0.5rem 0 0.5rem 0;
+    @include font-size(2rem, 6vw, 2.5rem);
+}
+
+h4 {
+    font-weight: bold;
+    margin: 0.5rem 0 0.5rem 0;
+    @include font-size(1.75rem, 6vw, 2.25rem);
+}
+
+h5 {
+    font-weight: bold;
+    margin: 0.5rem 0 0.5rem 0;
+    @include font-size(1.5rem, 6vw, 2rem);
+}
+
+h6 {
+    font-weight: bold;
+    margin: 0.5rem 0 0.5rem 0;
+    @include font-size(1.5rem, 6vw, 1.75rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+thead {
+    font-weight: 600;
+}
+
+// Paragraph
 p {
-    font-size: clamp(1rem, 4vw, 1.25rem);
     font-weight: 300;
+    @include font-size(1rem, 4vw, 1.25rem);
+}
+
+// Link
+a {
+    color: $link-color;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    @include font-size(1rem, 4vw, 1.25rem);
+    &:hover,
+    &:focus {
+        color: $link-hover-color;
+        text-decoration: none;
+    }
+}
+
+// Code
+code {
+    display: block;
+    background: $code-background;
+    color: $code-color;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+ul {
+    // padding-left: 20px;
+    li {
+        font-weight: 300;
+    }
+}
+
+ol {
+    // padding-left: 20px;
+    li {
+        font-weight: 300;
+    }
+}
+
+dl {
+    dt {
+        font-weight: 400;
+    }
+    dd {
+        font-weight: 300;
+        margin-left: 20px;
+    }
 }

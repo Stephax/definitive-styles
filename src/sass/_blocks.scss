@@ -1,8 +1,8 @@
-@import "_mixins";
-
+@import "Utils/_mixins";
 body {
     max-width: 800px;
-    background: $primary;
+    background: $body-background;
+    color: $body-color-light;
     margin: auto;
     @include font-family;
 }
@@ -17,19 +17,25 @@ section {
 
 table {
     width: 100%;
+    td {
+        padding: 6px 10px;
+    }
     thead {
         background: $table-head;
     }
-    td {
-        padding: 3px 5px;
-        &:first-child {
-            background: $table-head
+    tbody {
+        td {
+            color: $table-tbody-color;
         }
     }
 }
 
-table, thead, tbody, td {
+table,
+thead,
+tbody,
+td {
     border-collapse: collapse;
+    color: $table-color;
 }
 
 form {
@@ -37,17 +43,81 @@ form {
     label {
         display: block;
         margin-bottom: 20px;
-        input, textarea, select {
+        input,
+        textarea,
+        select {
             display: block;
             padding: 8px 12px;
             width: 100%;
             border: 1px solid $form-input-border-color;
             border-radius: $form-input-border-radius;
             background: $form-input-background;
+            box-sizing: border-box;
             &:focus {
                 border: 1px solid $form-input-border-color-focus;
                 outline: none;
             }
         }
+        span {
+            font-weight: 300;
+        }
+    }
+}
+
+details {
+    background: $details-background;
+    font-size: 16px;
+    padding: 1em 1em 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    &[open] {
+        padding: 1em;
+        summary {
+            margin-bottom: 0.5em;
+        }
+    }
+    summary {
+        background: $summary-background;
+        font-weight: bold;
+        margin: -1em -1em 0;
+        padding: 0.5em;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+    }
+    p {
+        margin: 5px 0 10px 0;
+        font-size: 16px;
+    }
+}
+
+blockquote {
+    border-left: 5px solid $blockquote-border;
+    margin-left: 0;
+    padding: 10px 0 10px 20px;
+    span {
+        font-style: italic;
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+button {
+    background: $button-background;
+    color: $button-color;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 5px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        background: $button-hover-background;
+        // color: $button-hover-color;
     }
 }

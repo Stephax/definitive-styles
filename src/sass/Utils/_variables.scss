@@ -1,0 +1,30 @@
+@import "_mixins";
+// Body background
+$body-background: #405a7b;
+$body-color-light: #e1e1e1;
+$body-color-dark: rgb(75, 75, 75);
+// Link
+$link-color: #fff;
+$link-hover-color: #d1d1d1;
+// Table
+$table-head: #405a7b;
+$table-color: #000;
+$table-tbody-color: #fff;
+// Form
+$form-input-border-color: rgb(235, 235, 235);
+$form-input-border-color-focus: #cccccc;
+$form-input-border-radius: 5px;
+$form-input-background: #efefef;
+// Code
+$code-background: #273a52;
+$code-color: #ffc967;
+// Details/Summary
+$details-background: #273a52;
+$summary-background: #2f4866;
+// Button
+$button-color: #fff;
+$button-background: #152b4a;
+$button-hover-background: #234574;
+$button-hover-color: rgb(197, 220, 255);
+// Blockquote
+$blockquote-border: #2f4866;

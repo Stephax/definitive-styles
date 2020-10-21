@@ -1,0 +1,12 @@
+// Here you can change your font for web.
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+// Here rewrite font-family from google fonts.
+@mixin font-family {
+    font-family: "Roboto", sans-serif;
+}
+
+@mixin font-size($min-size,
+$preffered-size,
+$max-size) {
+    font-size: clamp($min-size, $preffered-size, $max-size);
+}
